@@ -11,6 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.use('/api/v1/tasks', tasks);
+app.use('/api/v1/personaltasks', tasks);
 
 app.get('/', (req, res) => {
    res.send('Hey, Task Manager...');
